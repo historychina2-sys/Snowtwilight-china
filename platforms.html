@@ -1,0 +1,280 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Наши платформы | За Великой стеной</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#f7f3ee;
+    --paper:#ffffff;
+    --red:#9c2e2a;
+    --gold:#b8934a;
+    --text:#2c2c2c;
+    --border:#d9d0c4;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+
+header{
+    background:white;
+    border-bottom:1px solid var(--border);
+}
+
+.nav{
+    max-width:1300px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 30px;
+}
+
+.logo{
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;
+    font-weight:700;
+}
+
+.logo small{
+    display:block;
+    font-size:14px;
+    color:#666;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+}
+
+.menu a:hover{
+    color:var(--red);
+}
+
+.hero{
+    text-align:center;
+    padding:90px 20px 50px;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:72px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:900px;
+    margin:auto;
+}
+
+.platforms{
+    max-width:1300px;
+    margin:auto;
+    padding:40px 25px 100px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:24px;
+    border:1px solid var(--border);
+
+    padding:35px;
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.icon{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+
+    background:var(--red);
+    color:white;
+
+    padding:12px 24px;
+    border-radius:10px;
+}
+
+.footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid var(--border);
+}
+
+@media(max-width:700px){
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .menu{
+        display:none;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+За Великой стеной
+<small>Китай от древности до современности</small>
+</div>
+
+<nav class="menu">
+<a href="index.html">Главная</a>
+<a href="#">Материалы</a>
+<a href="platforms.html">Платформы</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Наши платформы</h1>
+
+<p>
+Следите за новостями курса, дополнительными материалами и публикациями о Китае на наших площадках.
+</p>
+
+</section>
+
+<section class="platforms">
+
+<div class="card">
+
+<div class="icon">📢</div>
+
+<h2>Telegram</h2>
+
+<p>
+Главная площадка курса.
+Анонсы занятий, презентации, дополнительные материалы и связь с участниками.
+</p>
+
+<a href="#" class="btn">
+Перейти
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🎥</div>
+
+<h2>YouTube</h2>
+
+<p>
+Лекции, исторические обзоры, дополнительные видеоматериалы и образовательный контент о Китае.
+</p>
+
+<a href="#" class="btn">
+Перейти
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">📕</div>
+
+<h2>Xiaohongshu (RedNote)</h2>
+
+<p>
+Китайская культура, путешествия, искусство, повседневная жизнь и визуальные материалы.
+</p>
+
+<a href="#" class="btn">
+Перейти
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🔴</div>
+
+<h2>Weibo</h2>
+
+<p>
+Новости Китая, актуальные события, интересные факты и публикации по тематике курса.
+</p>
+
+<a href="#" class="btn">
+Перейти
+</a>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<p>
+© За Великой стеной: Китай от древности до современности
+</p>
+
+<p>
+Проект разработан в рамках ВКР. Вологодский государственный университет. 2026 год.
+</p>
+
+</footer>
+
+</body>
+</html>
+```
